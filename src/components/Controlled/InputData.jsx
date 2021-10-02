@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './InputData.module.css';
 
-const InputData= ({label, type, name, value,onChange })=>{
+const InputData= (props)=>{
 
     return(
         <label>
-            {label}
+            {props.label}
             <input
-                name={name}  
+                name={props.name}  
                 defaultValue="Name"
-                type={type}
-                value={value}
-                onChange={onChange}
+                type={props.type}
+                value={props.value}
+                onChange={props.onChange}
             />
         </label>
     )
